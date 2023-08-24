@@ -11,6 +11,8 @@ datasource db {
 }
 
 model Person {
-  id  BigInt @id @default(autoincrement())
+  id Int @id
   name String
+  email String
+  document String
 }

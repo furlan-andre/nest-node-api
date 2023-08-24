@@ -8,7 +8,7 @@ import { PersonDto } from "./personDto.model";
 export class PersonService {
   constructor(private prisma: PrismaService) {}
 
-  create(personDto: PersonDto) {
+  create(personDto: PersonDto) {    
      return this.prisma.person.create({ data: personDto})
   }
 
